@@ -6,7 +6,7 @@
         <li class="cursor-pointer text-white">Features</li>
         <li class="cursor-pointer text-white">Pricing</li>
         <li class="cursor-pointer text-white">Contact</li>
-        <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+        <button type="button" class="bg-green-500 text-white rounded-md px-7 py-3 uppercase">Login</button>
       </ul>
       <div class="flex sm:hidden flex-1 justify-end"><i class="text-xl fas fa-bars text-white cursor-pointer"></i></div>
   </nav>

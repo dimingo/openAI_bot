@@ -1,18 +1,21 @@
 <template>
-  <Navigation />
-  <Hero />
-  <Features />
-  <Contact />
-  <Footer />
+  <!-- <Navigation />
+  <Hero /> -->
+  <section>
+    <whatsAppWeb />
+    
+  </section>
+  
+  
   
 </template>
 
 <script setup>
-import Navigation from './components/Navigation.vue';
-import Hero from './components/Hero.vue';
-import Features from './components/Features.vue';
-import Contact from './components/Contact.vue';
-import Footer from './components/Footer.vue';
+// import Navigation from './components/Navigation.vue';
+// import Hero from './components/Hero.vue';
+import whatsAppWeb from './components/whatsAppWeb.vue';
+
+// import Footer from './components/Footer.vue';
 
 
 </script>

@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* 
 .btn {
-    @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+  @apply shadow-md py-3 px-6 rounded-full transition duration-300;
 }
 
 .btn-purple {
-    @apply bg-bookmark-purple text-white;
+  @apply bg-green-600 text-white;
+  @apply transition-colors;
+  
+
+  @apply hover:text-green-600;
+  @apply hover:bg-transparent hover:underline;
 }
 
 .btn-red {
-    @apply bg-bookmark-red text-white;
-}
+  @apply bg-bookmark-red text-white;
+} */
