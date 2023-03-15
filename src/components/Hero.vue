@@ -1,48 +1,65 @@
 <template>
-    <section class="relative">
-        <div class="container flex flex-col-reverse lg:flex-row items-center pag-12 mt-14 lg:mt-28">
+    <section class="relative bg-white">
+    <!-- leftsection -->
+    <Navigation />
+        <div class="h-[500px] flex-1 bg-red-200">
+            <h1>test</h1>
+
+        </div>
+    
+        <div class="container flex flex-col-reverse lg:flex-row items-center pag-12  lg:mt-28">
             <div class="flex flex-1 flex-col items-center lg:items-start">
-                
+
 
                 <code
                     class=" text-green-500 flex font-bold text-3xl md:text-4 leg:text-5xl text-center lg:text-left mb-6">
-                    <span class="mr-2 ">Hi, I'm John</span> <img src="https://raw.githubusercontent.com/paulodhiambo/paulodhiambo/master/wave.gif"  class="w-9 h-8 rotate-45   "/></code>
+                    <span class="mr-2 ">Hi, Friend</span> <img src="https://raw.githubusercontent.com/paulodhiambo/paulodhiambo/master/wave.gif"  class="w-9 h-8 rotate-45   "/></code>
 
 
-               
-                    <Typewriter :texts="['Create incomparable recordings with your computer. Yeti microphones produce pristine, studio-quality recordings with legendary ease.', 'Text 2', 'Text 3','Text 4']"  class="text-white"/>
+
+                <Typewriter
+                    :texts="data"
+                    class="text-white" />
+
                 <div class="flex justify-center felx-wrap gap-6">
                     <code>
-                    <button class="glow-on-hover text-bookmark-grey font" type="button">Ask me anything</button>
 
 
+
+            <RouterView />
+
+            <RouterLink 
+            to="/chat" class="glow-on-hover text-white font p-2">
+            Let's Chat
+        
+        </RouterLink>
+       
+            
+                
                    </code>
                 </div>
 
-
-
-
             </div>
             <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-                <img src="../assets/images/chatbot.png" alt="micro illustration"
-                    class=" bg-green-400 w-3/4 h-3/4 sm:w-3/4 sm:h-3/4 md:w-3/5 md:h-3/5 rounded-xl">
+                <img src="../assets/images/chatbot2.png" alt="micro illustration"
+                    class="  w-3/4 h-3/4 sm:w-3/4 sm:h-3/4 md:w-3/5 md:h-3/5 rounded-xl">
             </div>
             <div
-                class="hidden md:block overflow-hidden bg-green-900 rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-30">
+                class="hidden md:block overflow-hidden bg-back rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-30">
             </div>
 
         </div>
     </section>
 </template>
 
-<script >
+<script setup >
 import Typewriter from '../components/Typewritter.vue'
-  
-  export default {
-    components: {
-      Typewriter
-    }
-  }
+import {ref} from 'vue'
+import Navigation from './Navigation.vue';
+
+
+const data = ref(['I\'m a highly advanced chatbot that uses natural language processing to understand and respond to your requests. Whether you need help with a task, want to have a casual conversation, or just need someone to listen, I\'m here for you 24/7.'])
+;
 
 
 
@@ -55,7 +72,7 @@ import Typewriter from '../components/Typewritter.vue'
     border: none;
     outline: none;
 
-    background: #111;
+    background: rgb(15, 24, 14);
     cursor: pointer;
     position: relative;
     z-index: 0;

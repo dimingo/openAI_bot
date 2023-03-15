@@ -1,24 +1,22 @@
+<script setup>
+import HomeViewVue from '../src/views/HomeView.vue';
+
+
+
+</script>
+
 <template>
-  <!-- <Navigation />
-  <Hero /> -->
-  <section>
-    <whatsAppWeb />
-    
-  </section>
+  
+  <RouterView></RouterView> 
+ 
+             
+  
   
   
   
 </template>
 
-<script setup>
-// import Navigation from './components/Navigation.vue';
-// import Hero from './components/Hero.vue';
-import whatsAppWeb from './components/whatsAppWeb.vue';
 
-// import Footer from './components/Footer.vue';
-
-
-</script>
 
 <style>
 body {
